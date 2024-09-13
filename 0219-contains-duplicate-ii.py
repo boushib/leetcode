@@ -17,6 +17,5 @@ def contains_nearby_duplicate(nums: List[int], k: int) -> bool:
     return False
 
 
-tests = [(([1, 2, 3, 1], 3), True), (([1, 0, 1, 1], 1), True),
-         (([1, 2, 3, 1, 2, 3], 2), False)]
+tests = [(([1, 2, 3, 1], 3), True), (([1, 0, 1, 1], 1), True), (([1, 2, 3, 1, 2, 3], 2), False)]
 run_tests(contains_nearby_duplicate, tests)

@@ -20,8 +20,7 @@ class ListNode:
         return res
 
 
-def merge_two_sorted_lists(a: Optional[ListNode],
-                           b: Optional[ListNode]) -> Optional[ListNode]:
+def merge_two_sorted_lists(a: Optional[ListNode], b: Optional[ListNode]) -> Optional[ListNode]:
     dummy_node = ListNode()
     curr_node = dummy_node
 
@@ -44,8 +43,7 @@ def merge_two_sorted_lists(a: Optional[ListNode],
     return dummy_node.next
 
 
-def merge_k_sorted_lists(
-        lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+def merge_k_sorted_lists(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
     if not lists:
         return None
 
@@ -63,8 +61,7 @@ def merge_k_sorted_lists(
 
 
 print(
-    merge_k_sorted_lists([
-        ListNode(1, ListNode(4, ListNode(5))),
-        ListNode(1, ListNode(3, ListNode(4))),
-        ListNode(2, ListNode(6))
-    ]))
+    merge_k_sorted_lists(
+        [ListNode(1, ListNode(4, ListNode(5))), ListNode(1, ListNode(3, ListNode(4))), ListNode(2, ListNode(6))]
+    )
+)

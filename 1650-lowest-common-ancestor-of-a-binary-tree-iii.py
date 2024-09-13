@@ -23,11 +23,12 @@ def lowest_common_ancestor(p: Node, q: Node) -> Node:
     return node_a
 
 
-root_1 = Node(3, Node(5, Node(6), Node(2, Node(7), Node(4))),
-              Node(1, Node(0), Node(8)))
+root_1 = Node(3, Node(5, Node(6), Node(2, Node(7), Node(4))), Node(1, Node(0), Node(8)))
 root_2 = Node(1, Node(2))
 
-tests = [((root_1.left, root_1.right), root_1),
-         ((root_1.left, root_1.left.right.right), root_1.left),
-         ((root_2, root_2.left), root_2)]
+tests = [
+    ((root_1.left, root_1.right), root_1),
+    ((root_1.left, root_1.left.right.right), root_1.left),
+    ((root_2, root_2.left), root_2),
+]
 run_tests(lowest_common_ancestor, tests)

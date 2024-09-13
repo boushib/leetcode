@@ -25,6 +25,5 @@ def common_chars(words: List[str]) -> List[str]:
     return res
 
 
-tests = [(["bella", "label", "roller"], ["e", "l", "l"]),
-         (["cool", "lock", "cook"], ["c", "o"])]
+tests = [(["bella", "label", "roller"], ["e", "l", "l"]), (["cool", "lock", "cook"], ["c", "o"])]
 run_tests(common_chars, tests)

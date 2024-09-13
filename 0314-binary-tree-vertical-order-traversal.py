@@ -39,16 +39,17 @@ def vertical_order(root: Optional[TreeNode]) -> List[List[int]]:
 
 
 tests = [
-    (TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15),
-                                       TreeNode(7))), [[9], [3, 15], [20],
-                                                       [7]]),
-    (TreeNode(3, TreeNode(9, TreeNode(4), TreeNode(0)),
-              TreeNode(8, TreeNode(1), TreeNode(7))), [[4], [9], [3, 0, 1],
-                                                       [8], [7]]),
-    (TreeNode(3, TreeNode(9, TreeNode(4), TreeNode(0, TreeNode(5),
-                                                   TreeNode(2))),
-              TreeNode(8, TreeNode(1), TreeNode(7))), [[4], [9, 5], [3, 0, 1],
-                                                       [8, 2],
-                                                       [7]]), (None, [])
+    (TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7))), [[9], [3, 15], [20], [7]]),
+    (
+        TreeNode(3, TreeNode(9, TreeNode(4), TreeNode(0)), TreeNode(8, TreeNode(1), TreeNode(7))),
+        [[4], [9], [3, 0, 1], [8], [7]],
+    ),
+    (
+        TreeNode(
+            3, TreeNode(9, TreeNode(4), TreeNode(0, TreeNode(5), TreeNode(2))), TreeNode(8, TreeNode(1), TreeNode(7))
+        ),
+        [[4], [9, 5], [3, 0, 1], [8, 2], [7]],
+    ),
+    (None, []),
 ]
 run_tests(vertical_order, tests)

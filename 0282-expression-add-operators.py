@@ -12,15 +12,14 @@ def add_ops(s: str, target: int) -> List[str]:
             return
 
         for i in range(pos, len(s)):
-            n = int(s[pos:i + 1])
+            n = int(s[pos : i + 1])
 
             if not path:
                 dfs(str(n), i + 1, n, n)
             else:
                 dfs(path + "+" + str(n), i + 1, curr_sum + n, n)
                 dfs(path + "-" + str(n), i + 1, curr_sum - n, -n)
-                dfs(path + "*" + str(n), i + 1, curr_sum - prev + n * prev,
-                    n * prev)
+                dfs(path + "*" + str(n), i + 1, curr_sum - prev + n * prev, n * prev)
 
             if s[pos] == "0":
                 break

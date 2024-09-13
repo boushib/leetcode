@@ -28,8 +28,7 @@ def right_side_view(root: Optional[TreeNode]) -> List[int]:
 
 
 tests = [
-    (TreeNode(1, TreeNode(2, None, TreeNode(5)),
-              TreeNode(3, None, TreeNode(4))), [1, 3, 4]),
+    (TreeNode(1, TreeNode(2, None, TreeNode(5)), TreeNode(3, None, TreeNode(4))), [1, 3, 4]),
     (TreeNode(1, None, TreeNode(3)), [1, 3]),
     (None, []),
 ]

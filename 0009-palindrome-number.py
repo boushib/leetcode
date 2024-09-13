@@ -14,9 +14,5 @@ def is_palindrome(n: int) -> bool:
     return original_n == reversed_n
 
 
-tests = [
-    (121, True),
-    (-121, False),
-    (10, False),
-]
+tests = [(121, True), (-121, False), (10, False)]
 run_tests(is_palindrome, tests)

@@ -19,15 +19,22 @@ def range_sum_bst(root: Optional[TreeNode], low: int, high: int) -> int:
     if root.val > high:
         return range_sum_bst(root.left, low, high)
 
-    return root.val + range_sum_bst(root.left, low, high) + range_sum_bst(
-        root.right, low, high)
+    return root.val + range_sum_bst(root.left, low, high) + range_sum_bst(root.right, low, high)
 
 
 tests = [
-    ((TreeNode(10, TreeNode(5, TreeNode(3), TreeNode(7)),
-               TreeNode(15, None, TreeNode(18))), 7, 15), 32),
-    ((TreeNode(10,
-               TreeNode(5, TreeNode(3, TreeNode(1)), TreeNode(7, TreeNode(6))),
-               TreeNode(15, TreeNode(13), TreeNode(18))), 6, 10), 23),
+    ((TreeNode(10, TreeNode(5, TreeNode(3), TreeNode(7)), TreeNode(15, None, TreeNode(18))), 7, 15), 32),
+    (
+        (
+            TreeNode(
+                10,
+                TreeNode(5, TreeNode(3, TreeNode(1)), TreeNode(7, TreeNode(6))),
+                TreeNode(15, TreeNode(13), TreeNode(18)),
+            ),
+            6,
+            10,
+        ),
+        23,
+    ),
 ]
 run_tests(range_sum_bst, tests)

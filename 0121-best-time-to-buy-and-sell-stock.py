@@ -13,8 +13,5 @@ def max_profit(prices: List[int]) -> int:
     return res
 
 
-tests = [
-    ([7, 1, 5, 3, 6, 4], 5),
-    ([7, 6, 4, 3, 1], 0),
-]
+tests = [([7, 1, 5, 3, 6, 4], 5), ([7, 6, 4, 3, 1], 0)]
 run_tests(max_profit, tests)

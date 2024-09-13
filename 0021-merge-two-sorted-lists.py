@@ -19,8 +19,7 @@ class ListNode:
         return res
 
 
-def merge_two_lists(a: Optional[ListNode],
-                    b: Optional[ListNode]) -> Optional[ListNode]:
+def merge_two_lists(a: Optional[ListNode], b: Optional[ListNode]) -> Optional[ListNode]:
     curr_node = dummy_node = ListNode()
 
     while a and b:
@@ -41,8 +40,10 @@ def merge_two_lists(a: Optional[ListNode],
     return dummy_node.next
 
 
-tests = [((ListNode(1, ListNode(2, ListNode(4))),
-           ListNode(1, ListNode(3, ListNode(4)))), [1, 1, 2, 3, 4, 4]),
-         ((None, ListNode(0)), [0]), ((None, None), [])]
+tests = [
+    ((ListNode(1, ListNode(2, ListNode(4))), ListNode(1, ListNode(3, ListNode(4)))), [1, 1, 2, 3, 4, 4]),
+    ((None, ListNode(0)), [0]),
+    ((None, None), []),
+]
 
 run_tests(merge_two_lists, tests)

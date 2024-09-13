@@ -17,8 +17,7 @@ def valid_palindrome(s: str) -> bool:
 
     while left < right:
         if s[left] != s[right]:
-            return is_palindrome(left + 1, right) or is_palindrome(
-                left, right - 1)
+            return is_palindrome(left + 1, right) or is_palindrome(left, right - 1)
 
         left += 1
         right -= 1
@@ -26,9 +25,5 @@ def valid_palindrome(s: str) -> bool:
     return True
 
 
-tests = [
-    ("aba", True),
-    ("abca", True),
-    ("abc", False),
-]
+tests = [("aba", True), ("abca", True), ("abc", False)]
 run_tests(valid_palindrome, tests)

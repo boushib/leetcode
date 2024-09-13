@@ -22,6 +22,5 @@ def valid_word_abbreviation(word: str, abbr: str) -> bool:
     return i == len(word) and j == len(abbr)
 
 
-tests = [(("internationalization", "i12iz4n"), True),
-         (("apple", "a2e"), False)]
+tests = [(("internationalization", "i12iz4n"), True), (("apple", "a2e"), False)]
 run_tests(valid_word_abbreviation, tests)

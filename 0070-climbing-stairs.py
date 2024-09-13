@@ -20,10 +20,5 @@ def climb_stairs(n: int) -> int:
     return y
 
 
-tests = [
-    (2, 2),
-    (6, 13),
-    (12, 233),
-    (20, 10946),
-]
+tests = [(2, 2), (6, 13), (12, 233), (20, 10946)]
 run_tests(climb_stairs, tests)

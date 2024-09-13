@@ -23,8 +23,7 @@ def largest_island(grid: List[List[int]]) -> int:
     for r in range(n):
         for c in range(n):
             if grid[r][c] == 1:
-                island_size_map[current_island_id] = dfs(
-                    r, c, current_island_id)
+                island_size_map[current_island_id] = dfs(r, c, current_island_id)
                 current_island_id += 1
 
     res = max(island_size_map.values(), default=0)
@@ -51,6 +50,11 @@ def largest_island(grid: List[List[int]]) -> int:
     return res
 
 
-tests = [([[1, 0], [0, 1]], 3), ([[1, 1], [1, 0]], 4), ([[1, 1], [1, 1]], 4),
-         ([[0, 0], [0, 0]], 1), ([[0, 0], [0, 1]], 2)]
+tests = [
+    ([[1, 0], [0, 1]], 3),
+    ([[1, 1], [1, 0]], 4),
+    ([[1, 1], [1, 1]], 4),
+    ([[0, 0], [0, 0]], 1),
+    ([[0, 0], [0, 1]], 2),
+]
 run_tests(largest_island, tests)

@@ -27,8 +27,11 @@ def can_three_part_eq_sum(nums: List[int]) -> bool:
     return False
 
 
-tests = [([0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1], True),
-         ([0, 2, 1, -6, 6, 7, 9, -1, 2, 0, 1], False),
-         ([3, 3, 6, 5, -2, 2, 5, 1, -9, 4], True), ([1, 1, 1, 1], False),
-         ([1, -1, 1, -1], False)]
+tests = [
+    ([0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1], True),
+    ([0, 2, 1, -6, 6, 7, 9, -1, 2, 0, 1], False),
+    ([3, 3, 6, 5, -2, 2, 5, 1, -9, 4], True),
+    ([1, 1, 1, 1], False),
+    ([1, -1, 1, -1], False),
+]
 run_tests(can_three_part_eq_sum, tests)

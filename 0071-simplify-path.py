@@ -17,7 +17,11 @@ def simplify_path(path: str) -> str:
     return "/" + "/".join(stack)
 
 
-tests = [("/home/", "/home"), ("/home//foo/", "/home/foo"),
-         ("/home/user/Documents/../Pictures", "/home/user/Pictures"),
-         ("/../", "/"), ("/.../a/../b/c/../d/./", "/.../b/d")]
+tests = [
+    ("/home/", "/home"),
+    ("/home//foo/", "/home/foo"),
+    ("/home/user/Documents/../Pictures", "/home/user/Pictures"),
+    ("/../", "/"),
+    ("/.../a/../b/c/../d/./", "/.../b/d"),
+]
 run_tests(simplify_path, tests)

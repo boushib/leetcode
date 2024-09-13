@@ -9,8 +9,7 @@ class TreeNode:
         self.right = right
 
 
-def lowest_common_ancestor(root: Optional[TreeNode], p: TreeNode,
-                           q: TreeNode) -> TreeNode:
+def lowest_common_ancestor(root: Optional[TreeNode], p: TreeNode, q: TreeNode) -> TreeNode:
     if not root:
         return None
 

@@ -9,8 +9,7 @@ def shortest_path_binary_matrix(grid: List[List[int]]) -> int:
     if grid[0][0] == 1 or grid[n - 1][n - 1] == 1:
         return -1
 
-    directions = [(0, 1), (1, 0), (0, -1), (-1, 0), (1, 1), (-1, -1), (1, -1),
-                  (-1, 1)]
+    directions = [(0, 1), (1, 0), (0, -1), (-1, 0), (1, 1), (-1, -1), (1, -1), (-1, 1)]
     queue = deque([(0, 0, 1)])
     grid[0][0] = 1
 
@@ -30,6 +29,5 @@ def shortest_path_binary_matrix(grid: List[List[int]]) -> int:
     return -1
 
 
-tests = [([[0, 1], [1, 0]], 2), ([[0, 0, 0], [1, 1, 0], [1, 1, 0]], 4),
-         ([[1, 0, 0], [1, 1, 0], [1, 1, 0]], -1)]
+tests = [([[0, 1], [1, 0]], 2), ([[0, 0, 0], [1, 1, 0], [1, 1, 0]], 4), ([[1, 0, 0], [1, 1, 0], [1, 1, 0]], -1)]
 run_tests(shortest_path_binary_matrix, tests)

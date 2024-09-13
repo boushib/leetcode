@@ -14,9 +14,5 @@ def merge_strings_alternately(s, t):
     return "".join(chars)
 
 
-tests = [
-    (("abc", "pqr"), "apbqcr"),
-    (("ab", "pqrs"), "apbqrs"),
-    (("abcd", "pq"), "apbqcd"),
-]
+tests = [(("abc", "pqr"), "apbqcr"), (("ab", "pqrs"), "apbqrs"), (("abcd", "pq"), "apbqcd")]
 run_tests(merge_strings_alternately, tests)

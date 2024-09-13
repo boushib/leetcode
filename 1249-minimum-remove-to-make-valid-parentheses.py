@@ -39,6 +39,5 @@ def min_remove_to_make_valid_parentheses(s: str) -> str:
     return "".join(res[::-1])
 
 
-tests = [("lee(t(c)o)de)", "lee(t(c)o)de"), ("a)b(c)d", "ab(c)d"),
-         ("))((", "")]
+tests = [("lee(t(c)o)de)", "lee(t(c)o)de"), ("a)b(c)d", "ab(c)d"), ("))((", "")]
 run_tests(min_remove_to_make_valid_parentheses, tests)

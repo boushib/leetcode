@@ -2,8 +2,7 @@ from typing import List
 from tests import run_tests
 
 
-def find_missing_ranges(nums: List[int], lower: int,
-                        upper: int) -> List[List[int]]:
+def find_missing_ranges(nums: List[int], lower: int, upper: int) -> List[List[int]]:
     res = []
     left = lower
 
@@ -18,6 +17,5 @@ def find_missing_ranges(nums: List[int], lower: int,
     return res
 
 
-tests = [(([0, 1, 3, 50, 75], 0, 99), [[2, 2], [4, 49], [51, 74], [76, 99]]),
-         (([-1], -1, -1), [])]
+tests = [(([0, 1, 3, 50, 75], 0, 99), [[2, 2], [4, 49], [51, 74], [76, 99]]), (([-1], -1, -1), [])]
 run_tests(find_missing_ranges, tests)

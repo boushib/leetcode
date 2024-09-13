@@ -21,10 +21,8 @@ def closest_value(root: TreeNode, target: float) -> int:
 
 
 tests = [
-    ((TreeNode(4, TreeNode(2, TreeNode(1), TreeNode(3)),
-               TreeNode(5)), 3.714286), 4),
-    ((TreeNode(4, TreeNode(2, TreeNode(1), TreeNode(3)),
-               TreeNode(5)), 3.5), 3),
+    ((TreeNode(4, TreeNode(2, TreeNode(1), TreeNode(3)), TreeNode(5)), 3.714286), 4),
+    ((TreeNode(4, TreeNode(2, TreeNode(1), TreeNode(3)), TreeNode(5)), 3.5), 3),
     ((TreeNode(1), 4.428571), 1),
 ]
 run_tests(closest_value, tests)

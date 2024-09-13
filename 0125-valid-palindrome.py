@@ -20,6 +20,5 @@ def is_palindrome(s: str) -> bool:
     return True
 
 
-tests = [("A man, a plan, a canal: Panama", True), ("race a car", False),
-         (" ", True)]
+tests = [("A man, a plan, a canal: Panama", True), ("race a car", False), (" ", True)]
 run_tests(is_palindrome, tests)

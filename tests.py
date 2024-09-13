@@ -2,8 +2,7 @@ def run_tests(fn, tests):
     successful_test_cases = 0
 
     for i, (input_data, expected) in enumerate(tests):
-        res = fn(*input_data) if isinstance(
-            input_data, tuple) and len(input_data) > 1 else fn(input_data)
+        res = fn(*input_data) if isinstance(input_data, tuple) and len(input_data) > 1 else fn(input_data)
 
         if res == expected:
             successful_test_cases += 1

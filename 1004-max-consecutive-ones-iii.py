@@ -21,6 +21,8 @@ def max_consecutive_ones(nums: List[int], k: int) -> int:
     return res
 
 
-tests = [(([1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], 2), 6),
-         (([0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1], 3), 10)]
+tests = [
+    (([1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], 2), 6),
+    (([0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1], 3), 10),
+]
 run_tests(max_consecutive_ones, tests)

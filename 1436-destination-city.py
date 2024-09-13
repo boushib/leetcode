@@ -15,7 +15,8 @@ def destination_city(paths: List[List[str]]) -> str:
     return ""
 
 
-tests = [([["London", "New York"], ["New York", "Lima"],
-           ["Lima", "Sao Paulo"]], "Sao Paulo"),
-         ([["B", "C"], ["D", "B"], ["C", "A"]], "A")]
+tests = [
+    ([["London", "New York"], ["New York", "Lima"], ["Lima", "Sao Paulo"]], "Sao Paulo"),
+    ([["B", "C"], ["D", "B"], ["C", "A"]], "A"),
+]
 run_tests(destination_city, tests)

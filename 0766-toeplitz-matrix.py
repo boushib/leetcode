@@ -13,6 +13,5 @@ def is_toeplitz_matrix(matrix: List[List[int]]) -> bool:
     return True
 
 
-tests = [([[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]], True),
-         ([[1, 2], [2, 2]], False)]
+tests = [([[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]], True), ([[1, 2], [2, 2]], False)]
 run_tests(is_toeplitz_matrix, tests)

@@ -15,11 +15,13 @@ def to_goat_latin(s: str) -> str:
 
 tests = [
     ("I speak Goat Latin", "Imaa peaksmaaa oatGmaaaa atinLmaaaaa"),
-    ("The quick brown fox jumped over the lazy dog",
-     "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa"
-     ),
-    ("Each word consists of lowercase and uppercase letters only",
-     "Eachmaa ordwmaaa onsistscmaaaa ofmaaaaa owercaselmaaaaaa andmaaaaaaa uppercasemaaaaaaaa etterslmaaaaaaaaa onlymaaaaaaaaaa"
-     )
+    (
+        "The quick brown fox jumped over the lazy dog",
+        "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa",
+    ),
+    (
+        "Each word consists of lowercase and uppercase letters only",
+        "Eachmaa ordwmaaa onsistscmaaaa ofmaaaaa owercaselmaaaaaa andmaaaaaaa uppercasemaaaaaaaa etterslmaaaaaaaaa onlymaaaaaaaaaa",
+    ),
 ]
 run_tests(to_goat_latin, tests)
