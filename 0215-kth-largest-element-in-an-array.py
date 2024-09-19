@@ -1,9 +1,10 @@
+# from heapq import heapify, heappop
 from typing import List
-from heapq import heapify, heappop
 from tests import run_tests
 
 
 def find_kth_largest(nums: List[int], k: int) -> int:
+    """
     max_heap = [-n for n in nums]
     heapify(max_heap)
 
@@ -14,6 +15,20 @@ def find_kth_largest(nums: List[int], k: int) -> int:
             return -heappop(max_heap)
 
         heappop(max_heap)
+
+    return -1
+    """
+    mn, mx = min(nums), max(nums)
+    count = [0] * (mx - mn + 1)
+
+    for n in nums:
+        count[n - mn] += 1
+
+    for i in range(len(count) - 1, -1, -1):
+        k -= count[i]
+
+        if k <= 0:
+            return mn + i
 
     return -1
 
