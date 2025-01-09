@@ -21,7 +21,6 @@ def vertical_order(root: Optional[TreeNode]) -> List[List[int]]:
 
     while queue:
         node, c = queue.popleft()
-
         if not node:
             continue
 

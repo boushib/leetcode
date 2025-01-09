@@ -13,15 +13,19 @@ class SparseVector:
     def dot_product(self, vec: List[int]) -> int:
         res = 0
 
-        for i in range(len(vec)):
-            if i in self.non_zero_indexes:
-                res += self.non_zero_indexes[i] * vec[i]
+        for k, v in vec.non_zero_indexes.items():
+            if k in self.non_zero_indexes:
+                res += v * self.non_zero_indexes[k]
 
         return res
 
 
-# vec1, vec2 = [1,0,0,2,3], [0,3,0,4,0] # 8
-# vec1, vec2 = [0,1,0,0,0], [0,0,0,0,2] # 0
-vec1, vec2 = [0, 1, 0, 0, 2, 0, 0], [1, 0, 0, 0, 3, 0, 4]  # 6
-sv = SparseVector(vec1)
-print(sv.dot_product(vec2))
+sv1 = SparseVector([0, 1, 0, 0, 2, 0, 0])
+sv2 = SparseVector([1, 0, 0, 0, 3, 0, 4])
+sv3 = SparseVector([1, 0, 0, 2, 3])
+sv4 = SparseVector([0, 3, 0, 4, 0])
+sv5 = SparseVector([0, 1, 0, 0, 0])
+sv6 = SparseVector([0, 0, 0, 0, 2])
+print(sv1.dot_product(sv2))  # 6
+print(sv3.dot_product(sv4))  # 8
+print(sv5.dot_product(sv6))  # 0
