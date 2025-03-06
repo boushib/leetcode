@@ -22,6 +22,10 @@ def valid_word_abbreviation(word: str, abbr: str) -> bool:
     return i == len(word) and j == len(abbr)
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [
     (("internationalization", "i12iz4n"), True),
     (("internationalization", "i5a11o1"), True),

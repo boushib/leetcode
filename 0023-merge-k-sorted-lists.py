@@ -60,6 +60,10 @@ def merge_k_sorted_lists(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
     return lists[0]
 
 
+# Time complexity: O(n * log(k))
+# Space complexity: O(1)
+
+
 print(
     merge_k_sorted_lists(
         [ListNode(1, ListNode(4, ListNode(5))), ListNode(1, ListNode(3, ListNode(4))), ListNode(2, ListNode(6))]

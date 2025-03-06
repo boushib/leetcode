@@ -16,6 +16,10 @@ def valid_parentheses(s: str) -> bool:
     return len(stack) == 0
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [
     ("()", True),
     ("()[]{}", True),

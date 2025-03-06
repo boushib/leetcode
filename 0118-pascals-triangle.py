@@ -16,5 +16,9 @@ def generate_pascal_triangle(n: int) -> List[List[int]]:
     return res
 
 
+# Time complexity: O(n^2)
+# Space complexity: O(n^2)
+
+
 tests = [(5, [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]])]
 run_tests(generate_pascal_triangle, tests)

@@ -17,6 +17,10 @@ def simplify_path(path: str) -> str:
     return "/" + "/".join(stack)
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [
     ("/home/", "/home"),
     ("/home//foo/", "/home/foo"),

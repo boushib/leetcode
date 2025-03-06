@@ -17,5 +17,9 @@ def subsets(nums: List[int]) -> List[List[int]]:
     return res
 
 
+# Time complexity: O(n * 2^n)
+# Space complexity: O(n * 2^n)
+
+
 tests = [([1, 2, 3], [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]]), ([0], [[], [0]])]
 run_tests(subsets, tests)

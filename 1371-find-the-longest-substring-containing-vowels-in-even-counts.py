@@ -18,6 +18,10 @@ def find_the_longest_substring(s: str) -> int:
     return res
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [
     ("eleetminicoworoep", 13),
     ("leetcodeisgreat", 5),

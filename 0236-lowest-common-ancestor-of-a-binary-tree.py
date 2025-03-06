@@ -24,3 +24,7 @@ def lowest_common_ancestor(root: Optional[TreeNode], p: TreeNode, q: TreeNode) -
         return root
 
     return left if left else right
+
+
+# Time complexity: O(n)
+# Space complexity: O(n)

@@ -13,6 +13,10 @@ def to_goat_latin(s: str) -> str:
     return " ".join(words)
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [
     ("I speak Goat Latin", "Imaa peaksmaaa oatGmaaaa atinLmaaaaa"),
     (

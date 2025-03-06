@@ -17,5 +17,9 @@ def is_anagram(s: str, t: str) -> bool:
     return True
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [(("anagram", "nagaram"), True), (("rat", "car"), False)]
 run_tests(is_anagram, tests)

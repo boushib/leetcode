@@ -17,5 +17,9 @@ def is_monotonic(nums: List[int]) -> bool:
     return True
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [([1, 2, 2, 3], True), ([6, 5, 4, 4], True), ([1, 3, 2], False)]
 run_tests(is_monotonic, tests)

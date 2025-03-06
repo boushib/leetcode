@@ -19,5 +19,9 @@ def rotate_array(nums: List[int], k: int) -> List[int]:
     return nums
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [(([1, 2, 3, 4, 5, 6, 7], 3), [5, 6, 7, 1, 2, 3, 4]), (([-1, -100, 3, 99], 2), [3, 99, -1, -100])]
 run_tests(rotate_array, tests)

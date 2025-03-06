@@ -14,5 +14,9 @@ def ocean_view(heights: List[int]) -> List[int]:
     return res[::-1]
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [([4, 2, 3, 1], [0, 2, 3]), ([4, 3, 2, 1], [0, 1, 2, 3])]
 run_tests(ocean_view, tests)

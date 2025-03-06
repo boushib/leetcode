@@ -15,6 +15,10 @@ def find_min_arrow_shots(points: List[List[int]]) -> int:
     return res
 
 
+# Time complexity: O(n log n)
+# Space complexity: O(1)
+
+
 tests = [
     ([[10, 16], [2, 8], [1, 6], [7, 12]], 2),
     ([[1, 2], [3, 4], [5, 6], [7, 8]], 4),

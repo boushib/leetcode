@@ -28,6 +28,10 @@ def add_ops(s: str, target: int) -> List[str]:
     return res
 
 
+# Time complexity: O(4^n)
+# Space complexity: O(n)
+
+
 tests = [
     (("123", 6), ["1*2*3", "1+2+3"]),
     (("232", 8), ["2*3+2", "2+3*2"]),

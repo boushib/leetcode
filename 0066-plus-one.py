@@ -17,5 +17,9 @@ def plus_one(digits: List[int]) -> List[int]:
     return digits[::-1]
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [([1, 2, 3], [1, 2, 4]), ([4, 3, 2, 1], [4, 3, 2, 2]), ([9], [1, 0])]
 run_tests(plus_one, tests)

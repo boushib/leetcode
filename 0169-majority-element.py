@@ -14,5 +14,9 @@ def majority_element(nums: List[int]) -> int:
     return candidate
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [([3, 2, 3], 3), ([2, 2, 1, 1, 1, 2, 2], 2)]
 run_tests(majority_element, tests)

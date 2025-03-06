@@ -25,3 +25,7 @@ def clone_graph(node: Optional[Node]) -> Optional[Node]:
         return node_map[n]
 
     return dfs(node)
+
+
+# Time complexity: O(n)
+# Space complexity: O(n)

@@ -13,5 +13,9 @@ def is_toeplitz_matrix(matrix: List[List[int]]) -> bool:
     return True
 
 
+# Time complexity: O(n * m)
+# Space complexity: O(1)
+
+
 tests = [([[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]], True), ([[1, 2], [2, 2]], False)]
 run_tests(is_toeplitz_matrix, tests)

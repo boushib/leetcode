@@ -16,6 +16,10 @@ def longest_common_prefix(strs: List[str]) -> str:
     return res
 
 
+# Time complexity: O(n * m), where n is the number of strings and m is the size of the smallest string
+# Space complexity: O(m)
+
+
 tests = [
     (["flower", "flow", "flight"], "fl"),
     (["dog", "racecar", "car"], ""),

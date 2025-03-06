@@ -29,6 +29,10 @@ def find_median_of_sorted_arrays(a: List[int], b: List[int]) -> float:
             lo = mid_a + 1
 
 
+# Time complexity: O(log(min(n, m)))
+# Space complexity: O(1)
+
+
 tests = [
     (([], [1]), 1),
     (([1, 3], [2]), 2),

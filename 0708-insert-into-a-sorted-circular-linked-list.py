@@ -1,5 +1,4 @@
 from typing import Optional
-from tests import run_tests
 
 
 class Node:
@@ -30,5 +29,5 @@ def insert_into_list(head: Optional[Node], v: int) -> Node:
             return head
 
 
-tests = []
-run_tests(insert_into_list, tests)
+# Time complexity: O(n)
+# Space complexity: O(1)

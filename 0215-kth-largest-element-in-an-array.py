@@ -33,5 +33,9 @@ def find_kth_largest(nums: List[int], k: int) -> int:
     return -1
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [(([3, 2, 1, 5, 6, 4], 2), 5), (([3, 2, 3, 1, 2, 4, 5, 5, 6], 4), 4)]
 run_tests(find_kth_largest, tests)

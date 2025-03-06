@@ -20,5 +20,9 @@ def can_partition(nums: List[int]) -> bool:
     return target in dp
 
 
+# Time complexity: O(n * sum(nums))
+# Space complexity: O(sum(nums))
+
+
 tests = [([1, 5, 11, 5], True), ([1, 2, 3, 5], False)]
 run_tests(can_partition, tests)

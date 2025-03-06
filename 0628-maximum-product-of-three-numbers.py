@@ -26,5 +26,9 @@ def max_product(nums: List[int]) -> int:
     return max(max1 * max2 * max3, min1 * min2 * max3)
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [([1, 2, 3], 6), ([1, 2, 3, 4], 24), ([-1, -2, -3], -6)]
 run_tests(max_product, tests)

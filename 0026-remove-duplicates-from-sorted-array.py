@@ -18,5 +18,9 @@ def remove_duplicates(nums: List[int]) -> int:
     return nums
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [([1, 1, 2], [1, 2, "_"]), ([0, 0, 1, 1, 1, 2, 2, 3, 3, 4], [0, 1, 2, 3, 4, "_", "_", "_", "_", "_"]), ([], [])]
 run_tests(remove_duplicates, tests)

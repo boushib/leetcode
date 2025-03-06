@@ -18,6 +18,10 @@ def check_subarray_sum(nums: List[int], k: int) -> bool:
     return False
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [
     (([23, 2, 4, 6, 7], 6), True),
     (([23, 2, 6, 4, 7], 6), True),

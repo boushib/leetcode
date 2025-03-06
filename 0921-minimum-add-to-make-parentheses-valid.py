@@ -18,6 +18,10 @@ def min_add_to_make_parentheses_valid(s: str) -> int:
     return min_additions_needed + opening_parentheses
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [
     ("())", 1),
     ("(((", 3),

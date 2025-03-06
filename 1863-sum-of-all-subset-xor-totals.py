@@ -18,5 +18,9 @@ def subset_xor_sum(nums: List[int]) -> int:
     return res
 
 
+# Time complexity: O(2^n)
+# Space complexity: O(1)
+
+
 tests = [([1, 3], 6), ([5, 1, 6], 28)]
 run_tests(subset_xor_sum, tests)

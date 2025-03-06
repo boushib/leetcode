@@ -32,6 +32,10 @@ def is_number(s: str) -> bool:
     return has_digit
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [
     ("2", True),
     ("0089", True),

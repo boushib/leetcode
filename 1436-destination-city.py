@@ -15,6 +15,10 @@ def destination_city(paths: List[List[str]]) -> str:
     return ""
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [
     ([["London", "New York"], ["New York", "Lima"], ["Lima", "Sao Paulo"]], "Sao Paulo"),
     ([["B", "C"], ["D", "B"], ["C", "A"]], "A"),

@@ -35,4 +35,8 @@ def tree_to_doubly_list(root: Optional[Node]) -> Optional[Node]:
     return first_node
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 print(tree_to_doubly_list(Node(4, Node(2, Node(1), Node(3)), Node(5))))  # [1, 2, 3, 4, 5]

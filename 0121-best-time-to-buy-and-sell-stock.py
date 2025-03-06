@@ -13,5 +13,9 @@ def max_profit(prices: List[int]) -> int:
     return res
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [([7, 1, 5, 3, 6, 4], 5), ([7, 6, 4, 3, 1], 0)]
 run_tests(max_profit, tests)

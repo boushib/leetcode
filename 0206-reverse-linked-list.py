@@ -20,3 +20,7 @@ def reverse_linked_list(head: Optional[ListNode]) -> Optional[ListNode]:
         a = next_node
 
     return b
+
+
+# Time complexity: O(n)
+# Space complexity: O(1)

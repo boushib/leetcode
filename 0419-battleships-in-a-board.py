@@ -21,5 +21,9 @@ def count_battleships(board: List[List[str]]) -> int:
     return res
 
 
+# Time complexity: O(n * m)
+# Space complexity: O(1)
+
+
 tests = [([["X", ".", ".", "X"], [".", ".", ".", "X"], [".", ".", ".", "X"]], 2), ([["."]], 0)]
 run_tests(count_battleships, tests)

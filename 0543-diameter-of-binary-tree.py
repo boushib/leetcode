@@ -26,5 +26,9 @@ def diameter_of_binary_tree(root: Optional[TreeNode]) -> int:
     return res
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [(TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3)), 3)]
 run_tests(diameter_of_binary_tree, tests)

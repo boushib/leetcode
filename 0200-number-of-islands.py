@@ -24,6 +24,10 @@ def number_of_islands(grid):
     return res
 
 
+# Time complexity: O(n * m), where n is the number of rows and m is the number of columns
+# Space complexity: O(n * m)
+
+
 tests = [
     (
         [

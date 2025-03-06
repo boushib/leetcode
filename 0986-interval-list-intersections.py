@@ -20,6 +20,10 @@ def interval_intersection(a: List[List[int]], b: List[List[int]]) -> List[List[i
     return res
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [
     (
         (

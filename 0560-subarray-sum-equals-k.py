@@ -15,5 +15,9 @@ def subarray_sum(nums: List[int], k: int) -> int:
     return res
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [(([1, -1, 1, 1, 1], 2), 4), (([1, 1, 1], 2), 2), (([1, 2, 3], 3), 2)]
 run_tests(subarray_sum, tests)

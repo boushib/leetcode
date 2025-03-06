@@ -15,6 +15,10 @@ def merge_intervals(intervals: List[List[int]]) -> List[List[int]]:
     return res
 
 
+# Time complexity: O(n log n)
+# Space complexity: O(n)
+
+
 tests = [
     ([[1, 3], [2, 6], [8, 10], [15, 18]], [[1, 6], [8, 10], [15, 18]]),
     ([[1, 4], [4, 5]], [[1, 5]]),

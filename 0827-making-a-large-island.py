@@ -50,6 +50,10 @@ def largest_island(grid: List[List[int]]) -> int:
     return res
 
 
+# Time complexity: O(n^2)
+# Space complexity: O(n^2)
+
+
 tests = [
     ([[1, 0], [0, 1]], 3),
     ([[1, 1], [1, 0]], 4),

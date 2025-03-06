@@ -37,6 +37,10 @@ def search_range(nums: List[int], target: int) -> List[int]:
     return [first, last]
 
 
+# Time complexity: O(log(n))
+# Space complexity: O(1)
+
+
 tests = [
     (([5, 7, 7, 8, 8, 10], 8), [3, 4]),
     (([5, 7, 7, 8, 8, 10], 6), [-1, -1]),

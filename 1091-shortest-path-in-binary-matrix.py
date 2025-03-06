@@ -29,5 +29,9 @@ def shortest_path_binary_matrix(grid: List[List[int]]) -> int:
     return -1
 
 
+# Time complexity: O(n^2)
+# Space complexity: O(n)
+
+
 tests = [([[0, 1], [1, 0]], 2), ([[0, 0, 0], [1, 1, 0], [1, 1, 0]], 4), ([[1, 0, 0], [1, 1, 0], [1, 1, 0]], -1)]
 run_tests(shortest_path_binary_matrix, tests)

@@ -20,6 +20,10 @@ def is_alien_sorted(words: List[str], order: str) -> bool:
     return True
 
 
+# Time complexity: O(n * m), where n is the number of words and m is the size of the longest word
+# Space complexity: O(1)
+
+
 tests = [
     ((["hello", "leetcode"], "hlabcdefgijkmnopqrstuvwxyz"), True),
     ((["word", "world", "row"], "worldabcefghijkmnpqstuvxyz"), False),

@@ -25,5 +25,9 @@ def valid_palindrome(s: str) -> bool:
     return True
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [("aba", True), ("abca", True), ("abc", False)]
 run_tests(valid_palindrome, tests)

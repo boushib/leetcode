@@ -26,6 +26,10 @@ def search_in_rotated_sorted_array(nums: List[int], target: int) -> int:
     return -1
 
 
+# Time complexity: O(log(n))
+# Space complexity: O(1)
+
+
 tests = [
     (([4, 5, 6, 7, 0, 1, 2], 0), 4),
     (([4, 5, 6, 7, 0, 1, 2], 3), -1),

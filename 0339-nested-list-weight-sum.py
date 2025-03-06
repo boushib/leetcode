@@ -16,5 +16,9 @@ def depth_sum(nested_list: List[int]) -> int:
     return 0
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [([[1, 1], 2, [1, 1]], 10), ([1, [4, [6]]], 27), ([0], 0)]
 run_tests(depth_sum, tests)

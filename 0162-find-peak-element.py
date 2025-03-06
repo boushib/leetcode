@@ -16,5 +16,9 @@ def find_peak_element(nums: List[int]) -> int:
             return mid
 
 
+# Time complexity: O(log(n))
+# Space complexity: O(1)
+
+
 tests = [([1, 2, 3, 1], 2), ([1, 2, 1, 3, 5, 6, 4], 5)]
 run_tests(find_peak_element, tests)

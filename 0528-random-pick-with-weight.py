@@ -26,6 +26,10 @@ class RandomPickWithWeight:
         return lo
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 rp = RandomPickWithWeight([1, 2, 3])
 print(rp.pick_index())
 print(rp.pick_index())

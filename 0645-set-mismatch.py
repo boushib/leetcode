@@ -18,5 +18,9 @@ def find_set_mismatch(nums: List[int]) -> List[int]:
     return [dup, missing]
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [([1, 2, 2, 4], [2, 3]), ([1, 1], [1, 2])]
 run_tests(find_set_mismatch, tests)

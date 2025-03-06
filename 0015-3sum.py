@@ -33,6 +33,10 @@ def three_sum(nums: List[int]) -> List[List[int]]:
     return res
 
 
+# Time complexity: O(n^2)
+# Space complexity: O(1)
+
+
 tests = [
     ([-1, 0, 1, 2, -1, -4], [[-1, -1, 2], [-1, 0, 1]]),
     ([0, 0, 0], [[0, 0, 0]]),

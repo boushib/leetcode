@@ -40,6 +40,10 @@ def merge_two_lists(a: Optional[ListNode], b: Optional[ListNode]) -> Optional[Li
     return dummy_node.next
 
 
+# Time complexity: O(n + m)
+# Space complexity: O(1)
+
+
 tests = [
     ((ListNode(1, ListNode(2, ListNode(4))), ListNode(1, ListNode(3, ListNode(4)))), [1, 1, 2, 3, 4, 4]),
     ((None, ListNode(0)), [0]),

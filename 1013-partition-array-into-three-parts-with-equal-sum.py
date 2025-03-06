@@ -11,20 +11,24 @@ def can_three_part_eq_sum(nums: List[int]) -> bool:
 
     target_sum = s // 3
     left_sum, right_sum = nums[0], nums[n - 1]
-    l, r = 1, n - 2
+    lo, hi = 1, n - 2
 
-    while l < r:
-        if l < r and left_sum != target_sum:
-            left_sum += nums[l]
-            l += 1
-        if l < r and right_sum != target_sum:
-            right_sum += nums[r]
-            r -= 1
+    while lo < hi:
+        if lo < hi and left_sum != target_sum:
+            left_sum += nums[lo]
+            lo += 1
+        if lo < hi and right_sum != target_sum:
+            right_sum += nums[hi]
+            hi -= 1
 
         if left_sum == right_sum == target_sum:
             return True
 
     return False
+
+
+# Time complexity: O(n)
+# Space complexity: O(1)
 
 
 tests = [

@@ -18,5 +18,9 @@ def freq_alphabets(s: str) -> str:
     return "".join(res)
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [("10#11#12", "jkab"), ("1326#", "acz")]
 run_tests(freq_alphabets, tests)

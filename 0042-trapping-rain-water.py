@@ -22,5 +22,9 @@ def trapping_water(heights: List[int]) -> int:
     return res
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1], 6), ([4, 2, 0, 3, 2, 5], 9)]
 run_tests(trapping_water, tests)

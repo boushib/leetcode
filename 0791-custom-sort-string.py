@@ -19,6 +19,10 @@ def custom_sort_string(order: str, s: str) -> str:
     return "".join(res)
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [
     (("cba", "abcd"), "cbad"),
     (("bcafg", "abcd"), "bcad"),

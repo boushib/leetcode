@@ -16,6 +16,10 @@ def min_circles_to_be_removed(circles: List[Tuple[int, int]]) -> int:
     return len(circles) - non_overlapping
 
 
+# Time complexity: O(n*log(n))
+# Space complexity: O(n)
+
+
 tests = [
     ([(0, 3), (2, 3), (4, 3)], 2),
     ([(1, 1), (4, 1), (7, 1), (10, 1)], 0),

@@ -37,6 +37,10 @@ def vertical_order(root: Optional[TreeNode]) -> List[List[int]]:
     return [cols[c] for c in range(min_c, max_c + 1)]
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [
     (TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7))), [[9], [3, 15], [20], [7]]),
     (

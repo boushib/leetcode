@@ -24,3 +24,7 @@ def copy_random_list(head: Optional[Node]) -> Optional[Node]:
         curr_node = curr_node.next
 
     return node_map[head]
+
+
+# Time complexity: O(n)
+# Space complexity: O(n)

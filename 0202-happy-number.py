@@ -25,5 +25,9 @@ def is_happy_number(n: int) -> bool:
     return False
 
 
+# Time complexity: O(log(n))
+# Space complexity: O(log(n))
+
+
 tests = [(19, True), (2, False)]
 run_tests(is_happy_number, tests)

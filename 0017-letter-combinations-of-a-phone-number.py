@@ -30,6 +30,10 @@ def letter_combinations(digits: str) -> List[str]:
     return res
 
 
+# Time complexity: O(4^n)
+# Space complexity: O(n)
+
+
 tests = [
     ("2", ["a", "b", "c"]),
     ("23", ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]),

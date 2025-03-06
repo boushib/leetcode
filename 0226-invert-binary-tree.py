@@ -37,3 +37,7 @@ def invert_binary_tree_iterative(root: Optional[TreeNode]) -> Optional[TreeNode]
             queue.append(node.right)
 
     return root
+
+
+# Time complexity: O(n)
+# Space complexity: O(n)

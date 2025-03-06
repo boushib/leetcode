@@ -14,5 +14,9 @@ def is_palindrome(n: int) -> bool:
     return original_n == reversed_n
 
 
+# Time complexity: O(log(n))
+# Space complexity: O(1)
+
+
 tests = [(121, True), (-121, False), (10, False)]
 run_tests(is_palindrome, tests)

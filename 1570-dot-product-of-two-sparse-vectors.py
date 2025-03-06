@@ -20,6 +20,10 @@ class SparseVector:
         return res
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 sv1 = SparseVector([0, 1, 0, 0, 2, 0, 0])
 sv2 = SparseVector([1, 0, 0, 0, 3, 0, 4])
 sv3 = SparseVector([1, 0, 0, 2, 3])

@@ -15,5 +15,9 @@ def maximum_swap(n: int) -> int:
     return n
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [(2736, 7236), (9973, 9973)]
 run_tests(maximum_swap, tests)

@@ -22,6 +22,10 @@ def top_k_frequent(nums: List[int], k: int) -> List[int]:
                 return res
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [
     (([1, 1, 1, 2, 2, 3], 2), [1, 2]),
     (([1], 1), [1]),

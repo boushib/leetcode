@@ -15,5 +15,9 @@ def move_zeroes(nums: List[int]) -> List[int]:
     return nums
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [([0, 1, 0, 3, 12], [1, 3, 12, 0, 0]), ([0], [0])]
 run_tests(move_zeroes, tests)

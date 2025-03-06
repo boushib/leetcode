@@ -40,6 +40,10 @@ def has_path_sum(root: Optional[TreeNode], target_sum: int) -> bool:
     return has_path_sum(root.left, target_sum - root.val) or has_path_sum(root.right, target_sum - root.val)
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [
     (
         (

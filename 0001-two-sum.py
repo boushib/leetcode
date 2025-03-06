@@ -14,5 +14,9 @@ def two_sum(nums: List[int], target: int) -> List[int]:
     return []
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [(([2, 7, 11, 15], 9), [0, 1]), (([3, 2, 4], 6), [1, 2]), (([3, 3], 6), [0, 1])]
 run_tests(two_sum, tests)

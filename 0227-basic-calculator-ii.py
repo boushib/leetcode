@@ -30,5 +30,9 @@ def calculate(s: str) -> int:
     return res + prev_n
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [("3+2*2", 7), (" 3/2 ", 1), (" 3+5 / 2 ", 5)]
 run_tests(calculate, tests)

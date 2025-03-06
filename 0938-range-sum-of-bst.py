@@ -22,6 +22,10 @@ def range_sum_bst(root: Optional[TreeNode], low: int, high: int) -> int:
     return root.val + range_sum_bst(root.left, low, high) + range_sum_bst(root.right, low, high)
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [
     ((TreeNode(10, TreeNode(5, TreeNode(3), TreeNode(7)), TreeNode(15, None, TreeNode(18))), 7, 15), 32),
     (

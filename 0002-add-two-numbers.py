@@ -33,6 +33,10 @@ def add_two_numbers(a: Optional[ListNode], b: Optional[ListNode]) -> Optional[Li
     return dummy_node.next
 
 
+# Time complexity: O(max(n, m))
+# Space complexity: O(max(n, m))
+
+
 print(
     add_two_numbers(
         ListNode(2, ListNode(4, ListNode(3))),

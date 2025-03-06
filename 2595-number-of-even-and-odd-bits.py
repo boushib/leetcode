@@ -14,5 +14,9 @@ def even_odd_bit(n: int) -> List[int]:
     return res
 
 
+# Time complexity: O(log(n))
+# Space complexity: O(1)
+
+
 tests = [(50, [1, 2]), (2, [0, 1])]
 run_tests(even_odd_bit, tests)

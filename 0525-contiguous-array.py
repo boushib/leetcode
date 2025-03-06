@@ -18,5 +18,9 @@ def find_max_length(nums: List[int]) -> int:
     return res
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [([0, 1], 2), ([0, 1, 0], 2)]
 run_tests(find_max_length, tests)

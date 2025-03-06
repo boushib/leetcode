@@ -19,6 +19,10 @@ def get_intersection_node(head_a: ListNode, head_b: ListNode) -> Optional[ListNo
     return a  # or b
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 a = ListNode(8, ListNode(4, ListNode(5)))
 b = ListNode(2, ListNode(4))
 tests = [

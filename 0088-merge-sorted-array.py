@@ -25,6 +25,10 @@ def merge_sorted_arrays(nums1: List[int], m: int, nums2: List[int], n: int) -> L
     return nums1
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [
     (([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3), [1, 2, 2, 3, 5, 6]),
     (([1], 1, [], 0), [1]),

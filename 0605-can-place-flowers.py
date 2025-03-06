@@ -23,5 +23,9 @@ def can_place_flowers(flowerbed: List[int], n) -> bool:
     return False
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [(([1, 0, 0, 0, 1], 1), True), (([1, 0, 0, 0, 1], 2), False)]
 run_tests(can_place_flowers, tests)

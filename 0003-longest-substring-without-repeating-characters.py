@@ -16,5 +16,9 @@ def longest_substring_without_repeating_chars(s: str) -> int:
     return res
 
 
+# Time complexity: O(n)
+# Space complexity: O(min(n, m)), where m is the size of the charset
+
+
 tests = [("abcabcbb", 3), ("bbbbb", 1), ("pwwkew", 3)]
 run_tests(longest_substring_without_repeating_chars, tests)

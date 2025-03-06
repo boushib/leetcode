@@ -20,6 +20,10 @@ def closest_value(root: TreeNode, target: float) -> int:
     return res
 
 
+# Time complexity: O(log(n))
+# Space complexity: O(1)
+
+
 tests = [
     ((TreeNode(4, TreeNode(2, TreeNode(1), TreeNode(3)), TreeNode(5)), 3.714286), 4),
     ((TreeNode(4, TreeNode(2, TreeNode(1), TreeNode(3)), TreeNode(5)), 3.5), 3),

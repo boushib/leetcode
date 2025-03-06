@@ -38,6 +38,10 @@ def is_palindrome_linked_list(head: Optional[ListNode]) -> bool:
     return True
 
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
 tests = [
     (ListNode(1, ListNode(2, ListNode(2, ListNode(1)))), True),
     (ListNode(1, ListNode(2, ListNode(1))), True),

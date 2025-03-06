@@ -19,5 +19,9 @@ def my_pow(x: float, n: int) -> float:
     return round(res, 5)
 
 
+# Time complexity: O(log(n))
+# Space complexity: O(1)
+
+
 tests = [((2.00000, 10), 1024.00000), ((2.10000, 3), 9.26100), ((2.00000, -2), 0.25000), ((200, 0), 1.00000)]
 run_tests(my_pow, tests)

@@ -35,5 +35,9 @@ def rotting_oranges(grid: List[List[int]]) -> int:
     return res if fresh_orange_count == 0 else -1
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [([[2, 1, 1], [1, 1, 0], [0, 1, 1]], 4), ([[2, 1, 1], [0, 1, 1], [1, 0, 1]], -1), ([[0, 2]], 0)]
 run_tests(rotting_oranges, tests)

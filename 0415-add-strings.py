@@ -18,5 +18,9 @@ def add_strings(num1: str, num2: str) -> str:
     return "".join(res[::-1])
 
 
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+
 tests = [(("11", "123"), "134"), (("456", "77"), "533"), (("0", "0"), "0")]
 run_tests(add_strings, tests)
