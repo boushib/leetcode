@@ -9,8 +9,29 @@ class TreeNode:
         self.right = right
 
 
+def has_path_sum_iterative(root: Optional[TreeNode], target_sum: int) -> bool:
+    if not root:
+        return False
+
+    queue = [(root, target_sum - root.val)]
+
+    while queue:
+        node, curr_target_sum = queue.pop()
+
+        if not node.left and not node.right and curr_target_sum == 0:
+            return True
+
+        if node.left:
+            queue.append((node.left, curr_target_sum - node.left.val))
+
+        if node.right:
+            queue.append((node.right, curr_target_sum - node.right.val))
+
+    return False
+
+
 def has_path_sum(root: Optional[TreeNode], target_sum: int) -> bool:
-    if root is None:
+    if not root:
         return False
 
     if not root.left and not root.right:
@@ -35,3 +56,4 @@ tests = [
     ((None, 0), False),
 ]
 run_tests(has_path_sum, tests)
+run_tests(has_path_sum_iterative, tests)
