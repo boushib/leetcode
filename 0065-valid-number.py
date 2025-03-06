@@ -5,31 +5,31 @@ def is_number(s: str) -> bool:
     """
     Rules:
     1. At least 1 digit
-    2. If a sign is present it should come first (begenning of the number of after the exponent)
+    2. If a sign is present it should come first (begenning of the number or after the exponent)
     3. <= 1 exponents
     4. <= 1 dots (only integers are allowed in exponent)
     """
-    digit_count, exponent_count, dot_count = 0, 0, 0
+    has_digit, has_exp, has_dot = False, False, False
 
     for i, c in enumerate(s):
         if c.isdigit():
-            digit_count += 1
-        elif c in ["+", "-"]:
+            has_digit = True
+        elif c.lower() == "e":
+            if not has_digit or has_exp:
+                return False
+            has_exp = True
+            has_digit = False
+        elif c == ".":
+            if has_dot or has_exp:
+                return False
+            has_dot = True
+        elif c == "+" or c == "-":
             if i > 0 and s[i - 1].lower() != "e":
                 return False
-        elif c.lower() == "e":
-            if digit_count == 0 or exponent_count == 1:
-                return False
-            exponent_count += 1
-            digit_count = 0
-        elif c == ".":
-            if dot_count == 1 or exponent_count == 1:
-                return False
-            dot_count += 1
         else:
             return False
 
-    return digit_count >= 1
+    return has_digit
 
 
 tests = [

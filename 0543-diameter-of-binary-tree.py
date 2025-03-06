@@ -11,19 +11,19 @@ class TreeNode:
 
 
 def diameter_of_binary_tree(root: Optional[TreeNode]) -> int:
-    res = [0]
+    res = 0
 
     def dfs(node):
         if not node:
             return 0
 
+        nonlocal res
         left, right = dfs(node.left), dfs(node.right)
-        res[0] = max(res[0], left + right)
-
+        res = max(res, right + left)
         return 1 + max(left, right)
 
     dfs(root)
-    return res[0]
+    return res
 
 
 tests = [(TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3)), 3)]

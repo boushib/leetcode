@@ -3,14 +3,13 @@ from tests import run_tests
 
 def longest_substring_without_repeating_chars(s: str) -> int:
     res = 0
-    left = 0
     char_set = set()
+    left = 0
 
     for c in s:
         while c in char_set:
             char_set.remove(s[left])
             left += 1
-
         char_set.add(c)
         res = max(res, len(char_set))
 

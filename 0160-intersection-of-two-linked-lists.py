@@ -16,7 +16,7 @@ def get_intersection_node(head_a: ListNode, head_b: ListNode) -> Optional[ListNo
         a = a.next if a else head_b
         b = b.next if b else head_a
 
-    return a
+    return a  # or b
 
 
 a = ListNode(8, ListNode(4, ListNode(5)))

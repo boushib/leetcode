@@ -16,22 +16,21 @@ def vertical_order(root: Optional[TreeNode]) -> List[List[int]]:
         return []
 
     cols = defaultdict(list)
-    min_c, max_c = 0, 0
+    min_col, max_col = 0, 0
     queue = deque([(root, 0, 0)])  # (node, row, column)
 
     while queue:
         node, r, c = queue.popleft()
-
-        if not node:
-            continue
-
-        min_c = min(min_c, c)
-        max_c = max(max_c, c)
+        min_col = min(min_col, c)
+        max_col = max(max_col, c)
         cols[c].append((r, node.val))
-        queue.append((node.left, r + 1, c - 1))
-        queue.append((node.right, r + 1, c + 1))
 
-    return [[v for _, v in sorted(cols[c], key=lambda x: (x[0], x[1]))] for c in range(min_c, max_c + 1)]
+        if node.left:
+            queue.append((node.left, r + 1, c - 1))
+        if node.right:
+            queue.append((node.right, r + 1, c + 1))
+
+    return [[v for _, v in sorted(cols[c], key=lambda x: (x[0], x[1]))] for c in range(min_col, max_col + 1)]
 
 
 tests = [

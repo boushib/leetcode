@@ -4,11 +4,11 @@ from tests import run_tests
 
 def max_profit(prices: List[int]) -> int:
     res = 0
-    min_price = prices[0]
+    min_price_so_far = prices[0]
 
     for price in prices:
-        min_price = min(min_price, price)
-        res = max(res, price - min_price)
+        res = max(res, price - min_price_so_far)
+        min_price_so_far = min(min_price_so_far, price)
 
     return res
 
