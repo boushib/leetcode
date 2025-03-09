@@ -12,5 +12,9 @@ def coin_change(coins: List[int], amount: int) -> int:
     return dp[amount] if dp[amount] != float("inf") else -1
 
 
+# Time complexity: O(amount * len(coins))
+# Space complexity: O(amount)
+
+
 tests = [(([1, 2, 5], 11), 3), (([2], 3), -1), (([1], 0), 0)]
 run_tests(coin_change, tests)
