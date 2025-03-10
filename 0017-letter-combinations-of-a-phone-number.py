@@ -18,13 +18,13 @@ def letter_combinations(digits: str) -> List[str]:
         "9": "wxyz",
     }
 
-    def dfs(index, curr_comb):
-        if len(curr_comb) == len(digits):
-            res.append(curr_comb)
+    def dfs(index, curr_combination):
+        if len(curr_combination) == len(digits):
+            res.append(curr_combination)
             return None
 
         for letter in phone_map[digits[index]]:
-            dfs(index + 1, curr_comb + letter)
+            dfs(index + 1, curr_combination + letter)
 
     dfs(0, "")
     return res

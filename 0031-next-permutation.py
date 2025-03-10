@@ -5,9 +5,15 @@ from tests import run_tests
 def next_permutation(nums: List[int]) -> List[int]:
     pivot = len(nums) - 1
 
+    # Find the pivot
     while pivot > 0 and nums[pivot] < nums[pivot - 1]:
         pivot -= 1
 
+    # if p == 0 the original permutation is the max
+    # and we just need to reverse the array to get
+    # the smallest permutation
+
+    # Find the best digit to swap with the pivot
     if pivot != 0:
         i = len(nums) - 1
 
@@ -16,6 +22,7 @@ def next_permutation(nums: List[int]) -> List[int]:
 
         nums[i], nums[pivot - 1] = nums[pivot - 1], nums[i]
 
+    # Reverse the sequence from pivot to the end
     lo, hi = pivot, len(nums) - 1
 
     while lo < hi:
