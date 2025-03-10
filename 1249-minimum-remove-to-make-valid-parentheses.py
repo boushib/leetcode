@@ -6,35 +6,25 @@ def min_remove_to_make_valid_parentheses(s: str) -> str:
     balanced_count = 0
 
     for i in range(len(s)):
-        c = s[i]
-
-        if c == ")" and balanced_count == 0:
+        if s[i] == ")" and balanced_count == 0:
             continue
-
-        if c == "(":
+        if s[i] == "(":
             balanced_count += 1
-
-        if c == ")":
+        if s[i] == ")":
             balanced_count -= 1
-
-        balanced.append(c)
+        balanced.append(s[i])
 
     res = []
     balanced_count = 0
 
     for i in range(len(balanced) - 1, -1, -1):
-        c = balanced[i]
-
-        if c == "(" and balanced_count == 0:
+        if s[i] == "(" and balanced_count == 0:
             continue
-
-        if c == "(":
+        if s[i] == "(":
             balanced_count -= 1
-
-        if c == ")":
+        if s[i] == ")":
             balanced_count += 1
-
-        res.append(c)
+        res.append(s[i])
 
     return "".join(res[::-1])
 

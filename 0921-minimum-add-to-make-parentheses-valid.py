@@ -3,13 +3,15 @@ from tests import run_tests
 
 def min_add_to_make_parentheses_valid(s: str) -> int:
     opening_parentheses = 0
-    min_additions_needed = 0  # # of opening parentheses needed to match the single closing parentheses
+    # number of opening parentheses needed
+    # to match the single closing parentheses
+    min_additions_needed = 0
 
     for c in s:
         if c == "(":
             opening_parentheses += 1
             continue
-
+        # c == ")"
         if opening_parentheses > 0:
             opening_parentheses -= 1
         else:
